@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./IMAGES/stravelslogo.png" type="image/x-icon">
+  <!-- fontawasome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./CSS/mainstyle.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0" href="#"><div class="logo"></div></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main"
+          aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler"><i class="fa fa-bars" aria-hidden="true"></i> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="navbar-nav me-0 mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our info</a>
+            </li>
+          </ul>
+          <form class="d-flex  text-center justify-content-center">
+            <a href="#search"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+            
+            <div class="form-check text-center form-switch">
+              <label class="form-check-label lw-1" for="themeswitcher">LIGHT</label>
+              <input class="form-check-input change" type="checkbox" onclick="theme()" id="themeswitcher"/>
+              <label class="form-check-label lw-1" for="themeswitcher">DARK</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main body -->
+  <section class="body">
+    <!-- containers -->
+    <section class="container">
+      <div class="row row-cols-md-4">
+        <div class="col-md-3">
+          <div class="col-container">
+            <div class="icon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></div>
+            <div class="comment">Expert Travel Advice</div>
+            <div class="info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-container">
+            <div class="icon"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></div>
+            <div class="comment">21 Day No-fee flexibility</div>
+            <div class="info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-container">
+            <div class="icon"><i class="fa fa-dollar fa-2x" aria-hidden="true"></i></div>
+            <div class="comment">Refund Guarantee</div>
+            <div class="info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-container">
+            <div class="icon">
+              <i class="fa fa-star fa-2x " aria-hidden="true"></i>
+
+            </div>
+            <div class="comment">Trusted</div>
+            <div class="info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video -->
+    <section class="video">
+      <video src="./IMAGES/homevideo.mp4" muted loop autoplay></video>
+      <div class="text text-center"><h1>Adventure</h1><h3>is</h3> <h2>worthwhile</h2>
+      <div class="discover"><h2>Discover More</h2></div></div>
+      <div class="overlay"></div>
+      <section class="container search-box p-2 shadow" id="search" >
+        <div class="row row-cols-md-4 pb-2">
+          <div class="col"><label for="#">Destination</label>
+          <input type="text" name="#" class="form-control" placeholder="--Place--"/></div>
+          <div class="col"><label for="#">Departure Date</label><input type="date" class="form-control" name="#" />
+          </div>
+          <div class="col"><label for="#">Price Range</label><input type="number" class="form-control" name="price"
+              placeholder="In Nepali Rupeee" /></div>
+          <div class="col"><label for="#">Search</label><input type="button" class="btn btn-primary br-50 form-control"
+              value="Search" name="#" /></div>
+        </div>
+      </section>
+    </section>
+    <div class="text-center where mt-5 container">
+      <h1>Where Adventure Holidays Begin</h1>
+      <p class="font-weight-500">45 years experience of taking people on extraordinary adventures.</p>
+      <p>At Exodus, we love adventure travel and always have. There’s something about the feeling of visiting a
+        new country, culture or environment – whether that’s a mountain range, desert or jungle – that just
+        can’t be beaten. We first took a group of travellers to the Himalaya 45 years ago, and have since
+        expanded to offer more than 500 itineraries across more than 90 countries. So, if you’re looking for an
+        adventure holiday, or are in need of some travel inspiration for your next activity holiday, you’ve come
+        to the right place.
+      </p>
+      <p>We are proud to say that 97% of our customers would recommend us to a friend: you can read feedback in
+        our Trip Review Centre. And it’s part of our mission to do things as responsibly as possible, without
+        damaging the environment or disrupting local communities. In fact, we work with local guides,
+        restaurants and guest houses to positively impact their communities and to help you get closer to the
+        heart and soul of the destinations that we travel to.</p>
+    </div>
+    <section class="row row-cols-md-3 mt-5 container-grid-main m-auto container">
+      <div class="col-md-6">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/main.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Save Up-to 10% cash on pokhara trip</h3>
+              <p class="content-body">Enjoy holiday at huge discounts...</p>
+              <p class="content-text"><i class="fa fa-map-marker"></i> Pokhara</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/main-2.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Destnation of the month</h3>
+              <p class="content-body">Jomsome</p>
+              <p class="content-text"><i class="fa fa-map-marker"></i> Mustang</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/main-3.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Best Tour Operator Award</h3>
+              <p class="content-body">Fun Travels</p>
+              <p class="content-text"><i class="fa fa-map-marker"></i> Kathmandu</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/main-4.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Where can i travel?</h3>
+              <p class="content-body">Take advantage of the New & Easy Testing rules for travel.</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/moneky.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Experiences Worth Waiting For</h3>
+              <p class="content-body">Life is short</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/main-4(1).jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Health Care</h3>
+              <p class="content-body">To travel is to live.</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES//people.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Travel hub</h3>
+              <p class="content-body">Travel Guidelines</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/forest.jpg">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Our Nature Net Positive commitment </h3>
+              <p class="content-body">Improvement</p>
+            </div>
+          </a> </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content"> <a href="#">
+            <div class="content-overlay"></div> <img class="content-image" src="./IMAGES/main-9.png">
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Book With Confidence</h3>
+              <p class="content-body">Extra booking flexibility & financial protection</p>
+            </div>
+          </a> </div>
+      </div>
+      </div>
+    </section>
+    <section class="best-selling-trips container">
+      <div class="d-flex trip-hr">
+        <hr><strong>Our Best Selling Trips</strong>
+        <hr>
+      </div>
+      <div class="row row-cols-md-4 ">
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div id="card-carousel-1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./IMAGES/main-2.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-3.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-9.png" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <!-- test -->
+              <h3 class="text-center ">Title</h3>
+              <small class="d-flex review-star justify-content-center text-center pb-2">
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star-half text-warning" aria-hidden="true"></i>
+                <label >1 reviews</label>
+              </small>
+              <div class="row row-cols-md-2 mt-2">
+                <div class="col-md-4"><img src="./IMAGES/main-2.jpg" class="img-fluid" alt="catagory"/>
+                <label>Culture</label></div>
+                <div class="col-md-8"><h5>Activity Level</h5>
+                <h6>Modarate</h6><hr class="m-0">
+              <label>Age 18+</label></div>
+                
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <h4>8 Days</h4>from <h4>$50</h4>
+              </div>
+              <div class="d-flex justify-content-center">
+                <label>Guided (Stravels)</label>
+              </div>
+              <div class="viw-button"><a type="button" class="form-control bg-primary text-light text-center mt-3">View Details</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div id="card-carousel-2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./IMAGES/main-2.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-3.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-9.png" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="text-center ">Title</h3>
+              <small class="d-flex review-star justify-content-center text-center pb-2">
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star-half text-warning" aria-hidden="true"></i>
+                <label >1 reviews</label>
+              </small>
+              <div class="row row-cols-md-2 mt-2">
+                <div class="col-md-4"><img src="./IMAGES/main-2.jpg" class="img-fluid" alt="catagory"/>
+                <label>Culture</label></div>
+                <div class="col-md-8"><h5>Activity Level</h5>
+                <h6>Modarate</h6><hr class="m-0">
+              <label>Age 18+</label></div>
+                
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <h4>8 Days</h4>from <h4>$50</h4>
+              </div>
+              <div class="d-flex justify-content-center">
+                <label>Guided (Stravels)</label>
+              </div>
+              <div class="viw-button"><a type="button" class="form-control bg-primary text-light text-center mt-3">View Details</a></div>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div id="card-carousel-3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./IMAGES/main-2.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-3.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-9.png" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="text-center ">Title</h3>
+              <small class="d-flex review-star justify-content-center text-center pb-2">
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star-half text-warning" aria-hidden="true"></i>
+                <label >1 reviews</label>
+              </small>
+              <div class="row row-cols-md-2 mt-2">
+                <div class="col-md-4"><img src="./IMAGES/main-2.jpg" class="img-fluid" alt="catagory"/>
+                <label>Culture</label></div>
+                <div class="col-md-8"><h5>Activity Level</h5>
+                <h6>Modarate</h6><hr class="m-0">
+              <label>Age 18+</label></div>
+                
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <h4>8 Days</h4>from <h4>$50</h4>
+              </div>
+              <div class="d-flex justify-content-center">
+                <label>Guided (Stravels)</label>
+              </div>
+              <div class="viw-button"><a type="button" class="form-control bg-primary text-light text-center mt-3">View Details</a></div>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow">
+            <div id="card-carousel-4" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./IMAGES/main-2.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-3.jpg" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMAGES/main-9.png" class="d-block img-fluid p-0 w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-4"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-4"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="text-center ">Title</h3>
+              <small class="d-flex review-star justify-content-center text-center pb-2">
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                <i class="fa fa-star-half text-warning" aria-hidden="true"></i>
+                <label >1 reviews</label>
+              </small>
+              <div class="row row-cols-md-2 mt-2">
+                <div class="col-md-4"><img src="./IMAGES/main-2.jpg" class="img-fluid" alt="catagory"/>
+                <label>Culture</label></div>
+                <div class="col-md-8"><h5>Activity Level</h5>
+                <h6>Modarate</h6><hr class="m-0">
+              <label>Age 18+</label></div>
+                
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <h4>8 Days</h4>from <h4>$50</h4>
+              </div>
+              <div class="d-flex justify-content-center">
+                <label>Guided (Stravels)</label>
+              </div>
+              <div class="viw-button"><a type="button" class="form-control bg-primary text-light text-center mt-3">View Details</a></div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex trip-hr mt-4">
+        <hr><strong> <button type="button" class="btn btn-outline-primary br-50 btn-rounded">
+            View all Trips >
+          </button></strong>
+        <hr>
+      </div>
+    </section>
+    <section class="paragraph container text-center">
+      <p> Our trips include walking and cycling tours that take in awe-inspiring scenery and breathtaking wildlife
+        encounters. And we have adventure holidays designed specifically for families, mixed-activity holidays and
+        seasonal getaways, perfect for those interested in winter sports. There are unforgettable experiences in top
+        destinations the world over. From your own African odyssey, to a journey of discovery in Central America and
+        pioneering expeditions to the Arctic and Antarctic, with Exodus these are just some of the memories waiting to
+        be made. We’ve also launched a collection of new adventure holidays for 30s and 40s to help busy professionals
+        maximise their annual leave. Join us now for the adventure holiday of a life time. </p>
+      <p>Our staff have collectively visited over 170 countries and have the passion, knowledge and insight around
+        adventure travel that you can rely on. Contact any of our Expert explorers or Specialist Sales Team today.</p>
+      <p>Finally, for any additional information about everything from bookings to how to prepare for specific activity
+        holidays, our ‘FAQs’ can help point you in the right direction.</p>
+    </section>
+    <!-- test -->
+    <div id="review-caroucel" class="carousel review-carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row row-cols-md-3 container mx-auto">
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I
+                  wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1" />
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+
+            </div>
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I
+                  wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1" />
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+            </div>
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+             
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row row-cols-md-3 container  mx-auto">
+            <div class="col">
+              
+                <figure class="snip1192">
+                  <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                  <div class="author">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                    <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                  </div>
+                </figure>
+               
+            </div>
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+             
+            </div>
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+             
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row row-cols-md-3 container mx-auto">
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+             
+            </div>
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+             
+            </div>
+            <div class="col">
+              <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#review-caroucel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#review-caroucel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section class="contact container">
+      <div class="row row-cols-md-3">
+        <div class="col-md-4"><div class="contact-item"><h5>Call us on 98407381115</h5></div></div>
+        <div class="col-md-4"><div class="contact-item"><h5>Email us</h5></div></div>
+        <div class="col-md-4"><div class="contact-item border-0"><h5>Chat with us online</h5></div></div>
+      </div>
+    </section>
+  </section>
+
+  <footer class="text-center text-lg-start text-muted">
+
+    <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom connected">
+
+      <div class="me-5 d-none d-lg-block ">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+
+
+      <div>
+
+        <section class="mb-2 social-media">
+
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+              class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+              class="fa fa-twitter" aria-hidden="true"></i></a>
+
+
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+              class="fa fa-google" aria-hidden="true"></i></a>
+
+
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+              class="fa fa-instagram" aria-hidden="true"></i></a>
+
+
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+              class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+              class="fa fa-github" aria-hidden="true"></i></a>
+        </section>
+
+      </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="">
+      <div class="container text-center text-md-start mt-2">
+
+        <div class="row mt-3">
+
+          <div class="container p-4 pb-0">
+
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                <button type="button" class="btn btn-outline-primary br-50 btn-rounded">
+                  Sign up!
+                </button>
+              </p>
+            </section>
+
+          </div>
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <h5 class="text-uppercase fw-bold mb-4 text-center">
+              <i class="fas fa-gem me-3"></i>STRAVELS
+            </h5>
+            <img src="./IMAGES/stravels.png" alt="logo">
+            <h5 class="text-center p-2">
+             Safe and Suitable Travels
+            </h5>
+          </div>
+
+
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              Packages
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+
+
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-uppercase  ">Travel Hub</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-uppercase ">Our Holidays</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-uppercase ">Careers</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-uppercase ">About Us</a>
+            </p>
+          </div>
+
+
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 contact-footer">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fa fa-home" aria-hidden="true"></i> Kathmandu , KTM 44600, NP</p>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i> stravels@gmail.com
+            </p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> + 977 984 073 8115</p>
+            <p><i class="fa fa-print" aria-hidden="true"></i> + 977 234 567 89</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Copyright -->
+    <div class="text-center copyright p-2" style="background-color: rgba(0, 0, 0, 0.034);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://stravels.ml">Stravels.ml</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- script tags -->
+  <script src="./JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
