@@ -839,7 +839,7 @@ a:hover {
 }
 
 .detailpage nav {
-    background-color: #fff;
+    background-color: var(--light);
 }
 
 .detailpage nav ul {
@@ -864,6 +864,20 @@ a:hover {
 
 .detailpage nav ul li:last-child::after {
     content: "";
+}
+
+.detailpage .details-start .start {
+    background: var(--text);
+    color: var(--bg);
+}
+.detailpage .details-start .start a:hover{
+
+    color: var(--bs-primary) !important;
+    }
+
+.detailpage .details-start .start a {
+
+    color: var(--bg) !important;
 }
 
 .detailpage .details-start h2 {
@@ -891,45 +905,39 @@ a:hover {
     border-radius: 50%;
     color: var(--dark) !important;
     padding: 20px;
-    width: 70%;
+    width: 60%;
 }
 
-.detailpage .details-start .book .intrest .icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath fill='%23415466' fill-rule='evenodd' d='M2.37 10.67c-.84.42-1.12.88-1.12 1.2 0 .33.28.8 1.12 1.21.8.4 1.95.67 3.25.67a7.5 7.5 0 003.26-.67c.84-.42 1.12-.88 1.12-1.2 0-.33-.28-.8-1.12-1.21A7.5 7.5 0 005.62 10a7.5 7.5 0 00-3.25.67zM1.8 9.55c1-.5 2.36-.8 3.81-.8 1.46 0 2.81.3 3.82.8.97.48 1.81 1.27 1.81 2.32 0 1.06-.84 1.85-1.81 2.33-1 .5-2.36.8-3.81.8-1.46 0-2.81-.3-3.82-.8-.96-.48-1.8-1.27-1.8-2.32 0-1.06.84-1.85 1.81-2.33z' clip-rule='evenodd'/%3E%3Cpath fill='%23415466' fill-rule='evenodd' d='M.63 11.25c.34 0 .62.28.62.63v5c0 .32.28.78 1.12 1.2.8.4 1.95.67 3.25.67a7.5 7.5 0 003.26-.67c.84-.42 1.12-.88 1.12-1.2v-5a.62.62 0 111.25 0v5c0 1.05-.84 1.84-1.81 2.32-1 .5-2.36.8-3.81.8-1.46 0-2.81-.3-3.82-.8C.84 18.72 0 17.93 0 16.88v-5c0-.35.28-.63.63-.63z' clip-rule='evenodd'/%3E%3Cpath fill='%23415466' fill-rule='evenodd' d='M.63 13.75c.34 0 .62.28.62.63 0 .32.28.78 1.12 1.2.8.4 1.95.67 3.25.67a7.5 7.5 0 003.26-.67c.84-.42 1.12-.88 1.12-1.2a.62.62 0 111.25 0c0 1.05-.84 1.84-1.81 2.32-1 .5-2.36.8-3.81.8-1.46 0-2.81-.3-3.82-.8C.84 16.22 0 15.43 0 14.38c0-.35.28-.63.63-.63zM11.67 3.54c.34 0 .62.28.62.63v4.16a.62.62 0 11-1.25 0V4.17c0-.35.28-.63.63-.63z' clip-rule='evenodd'/%3E%3Cpath fill='%23415466' fill-rule='evenodd' d='M11.23 7.89a.63.63 0 01.88 0l2.5 2.5a.63.63 0 01-.89.89l-2.5-2.5a.63.63 0 010-.89z' clip-rule='evenodd'/%3E%3Cpath fill='%23415466' fill-rule='evenodd' d='M5.08 6.8A.63.63 0 014.7 6a7.47 7.47 0 1110.37 9.19.62.62 0 11-.56-1.12 6.22 6.22 0 10-8.63-7.65.62.62 0 01-.8.38z' clip-rule='evenodd'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 15%;
+.detailpage .details-start .book {
+    background: var(--text);
+    color: var(--bg);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
 }
 
-.detailpage .details-start .book .split .icon {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23415466' d='M19.72 2.468a.75.75 0 011.06 0l3 3a.75.75 0 010 1.06l-3 3a.75.75 0 11-1.06-1.06l1.717-1.718h-3.25c-.636 0-1.296.28-1.963.785-.664.504-1.282 1.194-1.818 1.913A17.827 17.827 0 0012.835 12a17.822 17.822 0 001.572 2.552c.535.72 1.153 1.409 1.817 1.913.667.506 1.327.785 1.964.785h3.253l-1.721-1.722a.75.75 0 011.06-1.06l3 3a.75.75 0 010 1.06l-3 3a.75.75 0 11-1.06-1.06l1.717-1.718h-3.25c-1.08 0-2.054-.47-2.87-1.09-.818-.62-1.532-1.431-2.114-2.212a19.315 19.315 0 01-1.67-2.698H8a.75.75 0 010-1.5h3.534a19.317 19.317 0 011.67-2.698c.581-.78 1.295-1.591 2.113-2.212.816-.619 1.79-1.09 2.87-1.09h3.254L19.72 3.528a.75.75 0 010-1.06zM3.148 9.776a1.474 1.474 0 011.176.581.75.75 0 101.194-.908A2.974 2.974 0 003.813 8.35V8a.75.75 0 00-1.5 0v.358c-.43.096-.828.273-1.158.52-.516.387-.905.978-.905 1.696s.389 1.31.904 1.697c.516.387 1.193.604 1.909.604.422 0 .776.13 1.008.303.231.173.304.355.304.493s-.073.32-.304.494c-.231.173-.584.302-1.004.303h-.004a1.476 1.476 0 01-1.262-.58.75.75 0 10-1.194.91 2.975 2.975 0 001.706 1.098v.353a.75.75 0 001.5 0v-.363a3.04 3.04 0 001.158-.521c.515-.387.904-.978.904-1.694s-.39-1.307-.904-1.693c-.515-.386-1.192-.603-1.908-.603-.422 0-.776-.13-1.008-.303-.231-.174-.305-.357-.305-.498 0-.14.073-.322.304-.495.22-.165.553-.29.951-.301a.76.76 0 00.143-.003z'/%3E%3C/svg%3E");
-    ;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 15%;
-}
-
-.detailpage .highlights ul{
+.detailpage .highlights ul {
     list-style: none;
 }
 
-.detailpage .highlights ul li{
+.detailpage .highlights ul li {
     display: flex;
     padding: 5px;
 }
-.detailpage .highlights ul li div{
+
+.detailpage .highlights ul li div {
     width: 2rem;
-    height: 2rem;  
+    height: 2rem;
     margin-right: 0.5rem;
-   
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
     background: url(../IMAGES/check-circle-regular.svg);
 }
 
-.detailpage .Itinerary .accordion{
+.detailpage .Itinerary .accordion {
     border-top: 0.1em solid darkblue;
     color: var(--bg) !important;
     background: var(--text) !important;
@@ -939,7 +947,8 @@ a:hover {
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
 }
-.detailpage .Itinerary .accordion .accordion-body{
+
+.detailpage .Itinerary .accordion .accordion-body {
     background: var(--bg);
     color: var(--text);
     border-radius: 2px 2px 0px 0px;
@@ -947,38 +956,37 @@ a:hover {
     -moz-border-radius: 2px 2px 0px 0px;
     -ms-border-radius: 2px 2px 0px 0px;
 }
-.bg-white
-{
-    background-color:#ffffff;  
+
+.bg-white {
+    background-color: #ffffff;
 }
 
-.bg-primary
-{
-    background-color:var(--bs-primary)!important; 
+.bg-primary {
+    background-color: var(--bs-primary) !important;
 }
 
 .text-primary {
-    color: var(--bs-primary)!important;
+    color: var(--bs-primary) !important;
 }
 
 
-.detailpage .Itinerary  .accordion-item {
+.detailpage .Itinerary .accordion-item {
     border: none;
-    
+
 }
 
-.detailpage .Itinerary  .accordion-button {
+.detailpage .Itinerary .accordion-button {
     box-shadow: none;
-    border:none;
+    border: none;
     padding: 20px 50px;
     margin: 4px 0;
 }
-.detailpage .Itinerary .accordion-button:not(.collapsed)
-{
+
+.detailpage .Itinerary .accordion-button:not(.collapsed) {
     border-bottom: 4px solid var(--bs-primary);
     color: var(--bs-primary);
     font-weight: bold;
-} 
+}
 
 .detailpage .Itinerary .accordion-button:focus {
     z-index: 3;
@@ -992,7 +1000,7 @@ a:hover {
     transform: rotate(-180deg);
 }
 
-.detailpage .Itinerary  .accordion-button::after {
+.detailpage .Itinerary .accordion-button::after {
     flex-shrink: 0;
     width: 1.25rem;
     height: 1.25rem;
@@ -1004,7 +1012,7 @@ a:hover {
     transition: transform .2s ease-in-out;
 }
 
-.detailpage .Itinerary{
+.detailpage .Itinerary {
     background: var(--text);
     color: var(--bg);
     border-radius: 9px;
@@ -1014,7 +1022,8 @@ a:hover {
     -o-border-radius: 9px;
     margin-bottom: 1rem;
 }
-.detailpage .highlights{
+
+.detailpage .highlights {
     background: var(--text);
     color: var(--bg);
     border-radius: 9px;
@@ -1023,7 +1032,8 @@ a:hover {
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
 }
-.detailpage .overview{
+
+.detailpage .overview {
     background: var(--text);
     color: var(--bg);
     padding: 8px;
@@ -1034,7 +1044,8 @@ a:hover {
     -o-border-radius: 9px;
     margin-bottom: 1rem;
 }
-.detailpage .cost-detail{
+
+.detailpage .cost-detail {
     background: var(--text);
     color: var(--bg);
     padding: 8px;
@@ -1045,7 +1056,8 @@ a:hover {
     -o-border-radius: 9px;
     margin-bottom: 1rem;
 }
-.detailpage .datesandprice{
+
+.detailpage .datesandprice {
     background: var(--text);
     color: var(--bg);
     padding: 8px;
@@ -1056,6 +1068,32 @@ a:hover {
     -o-border-radius: 9px;
     margin-bottom: 1rem;
 }
-.detailpage .datesandprice .date{
-    background: var(--bg); color: var(--text);
+
+.detailpage .datesandprice .date {
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+.detailpage .information {
+    background: var(--text);
+    color: var(--light);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+.detailpage .information li a {
+    line-height: 1rem;
+    color: var(--bg) !important;
+}
+
+.detailpage .information li a:hover {
+    color: rgb(0, 153, 255) !important;
+}
+
+.detailpage .information h3 {
+    color: var(--bg);
 }
