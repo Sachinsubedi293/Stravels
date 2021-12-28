@@ -1056,3 +1056,6 @@ a:hover {
     -o-border-radius: 9px;
     margin-bottom: 1rem;
 }
+.detailpage .datesandprice .date{
+    background: var(--bg); color: var(--text);
+}
